@@ -1,0 +1,42 @@
+/**
+ * @mainpage Chat-Room Application in C++
+ *
+ * @section intro_sec Introduction
+ *
+ * **Chat-Room** is a multithreaded chat-room application developed in C++ using the powerful 
+ * Boost.Asio library. This project demonstrates how to create a robust, asynchronous server-client 
+ * architecture that supports multiple chat sessions concurrently. The application is designed 
+ * to handle real-time messaging efficiently across multiple clients.
+ *
+ * Github - https://github.com/Patel045/Chat-App 
+ *
+ * The server manages multiple client connections and facilitates the exchange of messages 
+ * between them. Each client can send and receive messages to and from the chat room, with the 
+ * server broadcasting messages to all connected clients. The application architecture leverages 
+ * the asynchronous I/O model provided by Boost.Asio, ensuring high performance and scalability.
+ *
+ * @section features_sec Features
+ *
+ * - **Asynchronous Server-Client Architecture**: Built using Boost.Asio to support high-performance, non-blocking I/O operations.
+ * - **Multithreading**: Handles multiple clients simultaneously, ensuring smooth and efficient communication.
+ * - **Session Management**: Each client is managed in a separate session, allowing isolated communication handling.
+ * - **Logger Integration**: The application includes a custom `Logger` class to log server-side events and messages for debugging and monitoring purposes.
+ * - **Scalable Design**: The architecture is designed to easily accommodate additional clients and chat sessions.
+ * - **Client Commands**: The server supports several Client Commands like \help, \list, \name_change{}, \msg{}{}, \quit
+ *
+ * @section usage_sec Usage
+ *
+ * 1. **Compile the Application**: Ensure that you have Boost.Asio installed. Compile the application using your preferred C++ compiler.
+ * 2. **Run the Server**: Start the server application to begin accepting client connections.
+ * 3. **Connect Clients**: Launch client instances to connect to the server and join the chat room.
+ * 4. **Start Chatting**: Clients can send messages to the chat room, and the server will broadcast these messages to all connected clients.
+ *
+ * @section dependencies_sec Dependencies
+ *
+ * - **Boost.Asio**: A cross-platform C++ library used for network and low-level I/O programming.
+ * - **C++11 or later**: The application leverages modern C++ features such as smart pointers and multithreading.
+ *
+ * @section license_sec License
+ *
+ * This project is released under the MIT License, allowing for flexible use, modification, and distribution.
+ */
